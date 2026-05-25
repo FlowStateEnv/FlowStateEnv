@@ -1,0 +1,281 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flow State Environmental | MS4 & NFI Compliance Solutions</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:1.6;
+    color:#333;
+}
+
+header{
+    background: linear-gradient(135deg,#0d4b8f,#38a53b);
+    color:white;
+    padding:20px 5%;
+    position:sticky;
+    top:0;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    height:70px;
+}
+
+.logo h1{
+    font-size:1.8rem;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    min-height:80vh;
+    background:
+    linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+    url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:40px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.25rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#38a53b;
+    color:white;
+    padding:15px 30px;
+    border-radius:5px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.section{
+    padding:80px 10%;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#0d4b8f;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card h3{
+    color:#38a53b;
+    margin-bottom:15px;
+}
+
+.about{
+    background:#f4f7f9;
+}
+
+.contact{
+    text-align:center;
+    background:#0d4b8f;
+    color:white;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#222;
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+
+<div class="logo">
+<img src="logo.png" alt="Flow State Environmental Logo">
+<div>
+<h1>Flow State Environmental</h1>
+</div>
+</div>
+
+<ul>
+<li><a href="#services">Services</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h2>Municipal Stormwater Compliance Made Simple</h2>
+
+<p>
+Flow State Environmental helps municipalities achieve and maintain
+MS4 and NFI compliance through practical stormwater management,
+regulatory support, inspections, documentation, and program development.
+</p>
+
+<a href="#contact" class="btn">Request a Consultation</a>
+</div>
+</section>
+
+<section class="section" id="services">
+
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>MS4 Program Compliance</h3>
+<p>
+Comprehensive support for Municipal Separate Storm Sewer System (MS4)
+permit compliance, reporting, program administration, and implementation.
+</p>
+</div>
+
+<div class="card">
+<h3>NFI Compliance Support</h3>
+<p>
+Guidance and documentation assistance to help municipalities satisfy
+National Flood Insurance Program and related regulatory requirements.
+</p>
+</div>
+
+<div class="card">
+<h3>Stormwater Inspections</h3>
+<p>
+Field assessments, outfall inspections, illicit discharge detection,
+BMP evaluations, and compliance documentation.
+</p>
+</div>
+
+<div class="card">
+<h3>Permit Reporting</h3>
+<p>
+Preparation of annual reports, tracking metrics, program documentation,
+and regulatory submissions.
+</p>
+</div>
+
+<div class="card">
+<h3>Municipal Training</h3>
+<p>
+Customized training programs for public works staff, municipal officials,
+and stormwater program personnel.
+</p>
+</div>
+
+<div class="card">
+<h3>Environmental Consulting</h3>
+<p>
+Practical environmental solutions that balance compliance,
+community needs, and long-term sustainability goals.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section about" id="about">
+
+<h2>About Flow State Environmental</h2>
+
+<p style="max-width:900px;margin:auto;text-align:center;">
+Flow State Environmental specializes in helping municipalities navigate
+complex environmental regulations with confidence. Our focus is on
+developing practical, cost-effective solutions that support compliance,
+protect water resources, and improve community resilience.
+</p>
+
+</section>
+
+<section class="section contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p>
+Ready to discuss your municipality's compliance needs?
+</p>
+
+<br>
+
+<p>
+Email: info@flowstateenvironmental.com
+</p>
+
+<p>
+Phone: (555) 555-5555
+</p>
+
+</section>
+
+<footer>
+<p>
+© 2025 Flow State Environmental. All Rights Reserved.
+</p>
+</footer>
+
+</body>
+</html>
