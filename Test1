@@ -1,281 +1,186 @@
-index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flow State Environmental | MS4 & NFI Compliance Solutions</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flow State Environmental</title>
+  <meta name="description" content="Environmental services, consulting, and sustainable solutions." />
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #111b2e;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #22c55e;
+    }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    line-height:1.6;
-    color:#333;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-header{
-    background: linear-gradient(135deg,#0d4b8f,#38a53b);
-    color:white;
-    padding:20px 5%;
-    position:sticky;
-    top:0;
-}
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
 
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
+    header {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #0b1220, #0f2a1f);
+    }
 
-.logo{
-    display:flex;
-    align-items:center;
-    gap:15px;
-}
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
 
-.logo img{
-    height:70px;
-}
+    header p {
+      color: var(--muted);
+      font-size: 1.2rem;
+      max-width: 600px;
+    }
 
-.logo h1{
-    font-size:1.8rem;
-}
+    .btn {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: var(--accent);
+      color: black;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-nav ul{
-    list-style:none;
-    display:flex;
-    gap:25px;
-}
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      background: #0f172a;
+      position: sticky;
+      top: 0;
+    }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-}
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-.hero{
-    min-height:80vh;
-    background:
-    linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-    url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80');
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    color:white;
-    padding:40px;
-}
+    nav a:hover {
+      color: var(--accent);
+    }
 
-.hero-content{
-    max-width:900px;
-}
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
 
-.hero h2{
-    font-size:3rem;
-    margin-bottom:20px;
-}
+    h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
 
-.hero p{
-    font-size:1.25rem;
-    margin-bottom:30px;
-}
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
 
-.btn{
-    display:inline-block;
-    background:#38a53b;
-    color:white;
-    padding:15px 30px;
-    border-radius:5px;
-    text-decoration:none;
-    font-weight:bold;
-}
+    .card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 12px;
+      transition: transform 0.2s ease;
+    }
 
-.section{
-    padding:80px 10%;
-}
+    .card:hover {
+      transform: translateY(-5px);
+    }
 
-.section h2{
-    text-align:center;
-    margin-bottom:40px;
-    color:#0d4b8f;
-}
-
-.services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
-}
-
-.card{
-    background:white;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-}
-
-.card h3{
-    color:#38a53b;
-    margin-bottom:15px;
-}
-
-.about{
-    background:#f4f7f9;
-}
-
-.contact{
-    text-align:center;
-    background:#0d4b8f;
-    color:white;
-}
-
-footer{
-    text-align:center;
-    padding:20px;
-    background:#222;
-    color:white;
-}
-</style>
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: var(--muted);
+      background: #050a14;
+    }
+  </style>
 </head>
-
 <body>
 
-<header>
-<nav>
+  <header>
+    <h1>Flow State Environmental</h1>
+    <p>Sustainable environmental solutions, consulting, and field services built for a cleaner future.</p>
+    <a class="btn" href="#contact">Get in Touch</a>
+  </header>
 
-<div class="logo">
-<img src="logo.png" alt="Flow State Environmental Logo">
-<div>
-<h1>Flow State Environmental</h1>
-</div>
-</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-<ul>
-<li><a href="#services">Services</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="card">
+      We provide environmental consulting and field services focused on sustainability, compliance, and restoration projects. Our goal is to help organizations reduce environmental impact while improving operational efficiency.
+    </div>
+  </section>
 
-</nav>
-</header>
+  <section id="services">
+    <h2>Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Environmental Consulting</h3>
+        <p>Regulatory guidance, impact assessments, and compliance strategy.</p>
+      </div>
+      <div class="card">
+        <h3>Field Services</h3>
+        <p>On-site inspections, sampling, and environmental monitoring.</p>
+      </div>
+      <div class="card">
+        <h3>Restoration Planning</h3>
+        <p>Ecosystem recovery and sustainable land-use strategies.</p>
+      </div>
+    </div>
+  </section>
 
-<section class="hero">
-<div class="hero-content">
-<h2>Municipal Stormwater Compliance Made Simple</h2>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Wetland Restoration</h3>
+        <p>Rehabilitation of degraded wetland ecosystems to improve biodiversity.</p>
+      </div>
+      <div class="card">
+        <h3>Site Assessment Program</h3>
+        <p>Comprehensive environmental site evaluations for development projects.</p>
+      </div>
+    </div>
+  </section>
 
-<p>
-Flow State Environmental helps municipalities achieve and maintain
-MS4 and NFI compliance through practical stormwater management,
-regulatory support, inspections, documentation, and program development.
-</p>
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: contact@flowstateenvironmental.com</p>
+      <p>Phone: (your number here)</p>
+    </div>
+  </section>
 
-<a href="#contact" class="btn">Request a Consultation</a>
-</div>
-</section>
-
-<section class="section" id="services">
-
-<h2>Our Services</h2>
-
-<div class="services">
-
-<div class="card">
-<h3>MS4 Program Compliance</h3>
-<p>
-Comprehensive support for Municipal Separate Storm Sewer System (MS4)
-permit compliance, reporting, program administration, and implementation.
-</p>
-</div>
-
-<div class="card">
-<h3>NFI Compliance Support</h3>
-<p>
-Guidance and documentation assistance to help municipalities satisfy
-National Flood Insurance Program and related regulatory requirements.
-</p>
-</div>
-
-<div class="card">
-<h3>Stormwater Inspections</h3>
-<p>
-Field assessments, outfall inspections, illicit discharge detection,
-BMP evaluations, and compliance documentation.
-</p>
-</div>
-
-<div class="card">
-<h3>Permit Reporting</h3>
-<p>
-Preparation of annual reports, tracking metrics, program documentation,
-and regulatory submissions.
-</p>
-</div>
-
-<div class="card">
-<h3>Municipal Training</h3>
-<p>
-Customized training programs for public works staff, municipal officials,
-and stormwater program personnel.
-</p>
-</div>
-
-<div class="card">
-<h3>Environmental Consulting</h3>
-<p>
-Practical environmental solutions that balance compliance,
-community needs, and long-term sustainability goals.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="section about" id="about">
-
-<h2>About Flow State Environmental</h2>
-
-<p style="max-width:900px;margin:auto;text-align:center;">
-Flow State Environmental specializes in helping municipalities navigate
-complex environmental regulations with confidence. Our focus is on
-developing practical, cost-effective solutions that support compliance,
-protect water resources, and improve community resilience.
-</p>
-
-</section>
-
-<section class="section contact" id="contact">
-
-<h2>Contact Us</h2>
-
-<p>
-Ready to discuss your municipality's compliance needs?
-</p>
-
-<br>
-
-<p>
-Email: info@flowstateenvironmental.com
-</p>
-
-<p>
-Phone: (555) 555-5555
-</p>
-
-</section>
-
-<footer>
-<p>
-© 2025 Flow State Environmental. All Rights Reserved.
-</p>
-</footer>
+  <footer>
+    © 2026 Flow State Environmental. All rights reserved.
+  </footer>
 
 </body>
 </html>
